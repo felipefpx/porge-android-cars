@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.porge.android.cars">
+
+    <application>
+        <activity
+            android:name="me.porge.android.cars.tests.instrumented.FakeTestActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+    </application>
+</manifest>

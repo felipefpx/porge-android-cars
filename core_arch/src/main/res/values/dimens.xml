@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_icon_size">48dp</dimen>
+    <dimen name="progress_size">24dp</dimen>
+
+    <dimen name="item_min_height">48dp</dimen>
+    <dimen name="max_description_text_width">280dp</dimen>
+
+    <dimen name="spacing_4dp">4dp</dimen>
+    <dimen name="spacing_8dp">8dp</dimen>
+    <dimen name="spacing_16dp">16dp</dimen>
+    <dimen name="spacing_24dp">24dp</dimen>
+    <dimen name="spacing_32dp">32dp</dimen>
+
+    <dimen name="size_12sp">12sp</dimen>
+    <dimen name="size_16sp">16sp</dimen>
+    <dimen name="size_24sp">24sp</dimen>
+
+    <dimen name="bottom_sheet_elevation">8dp</dimen>
+</resources>

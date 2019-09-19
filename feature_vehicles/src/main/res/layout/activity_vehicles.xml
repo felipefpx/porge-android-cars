@@ -1,0 +1,36 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <fragment
+        android:id="@+id/fragmentVehiclesMap"
+        android:name="me.porge.android.cars.vehicles.layers.presentation.views.VehicleMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".vehicles.layers.presentation.views.VehiclesActivity"
+        tools:layout="@layout/fragment_vehicle_map" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottomSheetVehicles"
+        style="@style/Widget.MaterialComponents.BottomSheet.Modal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="200dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/bottom_sheet_elevation"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <fragment
+            android:id="@+id/fragmentVehiclesList"
+            android:name="me.porge.android.cars.vehicles.layers.presentation.views.VehicleListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".vehicles.layers.presentation.views.VehiclesActivity"
+            tools:layout="@layout/fragment_vehicle_list" />
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

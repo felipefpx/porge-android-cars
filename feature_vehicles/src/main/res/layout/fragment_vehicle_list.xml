@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/imageVehicleListSwipeAnchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/vehicle_list_swipe_anchor_desc"
+        android:paddingTop="@dimen/spacing_8dp"
+        android:paddingBottom="@dimen/spacing_16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageVehicleListLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape_swipe_anchor" />
+
+    <ImageView
+        android:id="@+id/imageVehicleListLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="@dimen/spacing_16dp"
+        android:layout_marginEnd="@dimen/spacing_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageVehicleListSwipeAnchor"
+        app:srcCompat="@drawable/ic_porge_logo"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVehicleList"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:paddingTop="@dimen/spacing_24dp"
+        android:paddingBottom="@dimen/spacing_16dp"
+        android:clipToPadding="false"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageVehicleListLogo"
+        tools:listitem="@layout/item_vehicle" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recyclerVehicleList"
+        app:srcCompat="@drawable/shape_white_gradient"
+        tools:ignore="ContentDescription" />
+
+    <ProgressBar
+        android:id="@+id/progressBarVehicleList"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/progress_size"
+        android:layout_height="@dimen/progress_size"
+        android:layout_marginEnd="@dimen/spacing_16dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageVehicleListLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageVehicleListLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

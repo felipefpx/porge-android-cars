@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintVehicleItemRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/spacing_8dp"
+    android:paddingBottom="@dimen/spacing_8dp"
+    android:theme="@style/AppTheme">
+
+    <ImageView
+        android:id="@+id/imageVehicleItemIcon"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="@dimen/spacing_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textVehicleItemSubtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textVehicleItemTitle"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_vehicle_placeholder" />
+
+    <TextView
+        android:id="@+id/textVehicleItemTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16dp"
+        android:layout_marginEnd="@dimen/spacing_8dp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textVehicleItemSubtitle"
+        app:layout_constraintEnd_toStartOf="@id/imageVehicleItemIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="BWM i3 (M-VO0265)" />
+
+    <TextView
+        android:id="@+id/textVehicleItemSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16dp"
+        android:layout_marginTop="@dimen/spacing_4dp"
+        android:layout_marginEnd="@dimen/spacing_8dp"
+        android:textColor="@color/gray_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageVehicleItemIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVehicleItemTitle"
+        tools:text="Driver: Unknown" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

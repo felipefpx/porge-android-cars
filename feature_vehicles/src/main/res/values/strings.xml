@@ -1,0 +1,12 @@
+<resources>
+    <!-- VehiclesActivity -->
+    <string name="vehicles_error">An error occurred. Please, check your Internet connection and try again…</string>
+    <string name="vehicles_error_action">OK</string>
+
+    <!-- VehicleListFragment -->
+    <string name="vehicle_list_swipe_anchor_desc">Swipe up to expand vehicle list</string>
+
+    <!-- VehicleBinder -->
+    <string name="vehicle_item_title">%1$s (%2$s)</string>
+    <string name="vehicle_item_subtitles"><![CDATA[<b>Driver:</b> %s]]></string>
+</resources>
