@@ -1,7 +1,7 @@
 object AppConfig {
     const val APPLICATION_ID = "me.porge.android.cars"
 
-    const val VERSION_CODE = 4
+    const val VERSION_CODE = 10
     const val VERSION_NAME = "1.1.0"
 
     const val TARGET_ANDROID_API = 29
