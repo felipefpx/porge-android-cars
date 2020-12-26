@@ -22,4 +22,4 @@ In this project, these open-source libraries were used:
 
 
 # Other notes
-- I kept keystore.properties at git just to make it easy to share, but it is not recommended in a real product. 
+- I kept keystore.properties on git just to make it easy to share, but it is not recommended in a real product. 

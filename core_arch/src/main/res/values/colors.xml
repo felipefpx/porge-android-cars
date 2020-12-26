@@ -10,6 +10,7 @@
     <color name="gray_lighter">#F2F2F4</color>
 
     <color name="yellow">#FFD942</color>
-    <color name="green">#78C25C</color>
+    <color name="green">#3CDC84</color>
+    <color name="green_light">#adffd2</color>
     <color name="gray_dark">#4D4D4D</color>
 </resources>
