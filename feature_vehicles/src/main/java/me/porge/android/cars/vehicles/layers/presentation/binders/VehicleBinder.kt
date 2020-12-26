@@ -27,7 +27,7 @@ object VehicleBinder : ListableBinder<Vehicle> {
 
             setBackgroundColor(
                 when {
-                    item.isSelected -> R.color.green
+                    item.isSelected -> R.color.green_light
                     else -> android.R.color.white
                 }.let { ContextCompat.getColor(context, it) }
             )
