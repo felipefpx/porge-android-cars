@@ -56,7 +56,7 @@ class ImageLoaderTest : BaseTest(useMockkAnnotations = true) {
         val mockImageView = mockk<ImageView> {
             every { context } returns mockContext
         }
-        val fakeUrl = "http://www.porge.me/icon.png"
+        val fakeUrl = "https://www.porge.me/icon.png"
         val fakePlaceholderId = 10
 
         // When
